@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Melissa Christian-Smorul | Resume</title>
+  <style>
+    :root{
+      --purple:#5b2aa6;     /* sidebar purple (adjust to match your PDF) */
+      --purple-dark:#48086f;/* accent purple */
+      --text:#111;
+      --muted:#555;
+      --rule:#1a1a1a;
+      --bg:#ffffff;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      color:var(--text);
+      background:var(--bg);
+    }
+    .page{
+      display:grid;
+      grid-template-columns: 260px 1fr;
+      min-height:100vh;
+    }
+    /* LEFT RAIL */
+    .rail{
+      background:var(--purple);
+      padding:28px 20px;
+      position:relative;
+    }
+    .avatar{
+      width:110px;
+      height:110px;
+      border-radius:10px;
+      background:rgba(255,255,255,.18);
+      border:2px solid rgba(255,255,255,.35);
+      margin-bottom:18px;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-size:12px;
+      text-align:center;
+      padding:10px;
+    }
+    .rail .divider{
+      height:2px;
+      background:rgba(255,255,255,.35);
+      margin:18px 0;
+    }
+    .iconRow{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .iconLink{
+      width:38px;
+      height:38px;
+      border-radius:10px;
+      background:rgba(255,255,255,.18);
+      border:1px solid rgba(255,255,255,.35);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      color:white;
+      font-weight:700;
+      letter-spacing:.02em;
+    }
+    .rail small{
+      color:rgba(255,255,255,.9);
+      display:block;
+      margin-top:10px;
+      line-height:1.25;
+    }
+
+    /* MAIN CONTENT */
+    main{
+      padding:34px 38px;
+      max-width: 980px;
+    }
+    header{
+      padding-bottom:16px;
+      border-bottom:2px solid var(--rule);
+      margin-bottom:18px;
+    }
+    h1{
+      margin:0 0 4px;
+      font-size:34px;
+      letter-spacing:.2px;
+    }
+    .title{
+      margin:0;
+      font-size:18px;
+      color:var(--muted);
+      font-weight:600;
+    }
+    section{
+      margin:18px 0 0;
+    }
+    h2{
+      margin:0 0 8px;
+      font-size:14px;
+      letter-spacing:.14em;
+      color:var(--purple-dark);
+      text-transform:uppercase;
+    }
+    .summary{
+      margin:0;
+      line-height:1.45;
+    }
+    .role{
+      margin-top:10px;
+      font-weight:700;
+    }
+    .meta{
+      color:var(--muted);
+      font-weight:600;
+      margin:2px 0 8px;
+    }
+    ul{
+      margin:8px 0 0 18px;
+      padding:0;
+    }
+    li{ margin:6px 0; line-height:1.35; }
+    .cols{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px 26px;
+    }
+    .pillList{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:6px;
+    }
+    .pill{
+      border:1px solid #ddd;
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:13px;
+      background:#fafafa;
+    }
+    .download{
+      display:inline-block;
+      margin-top:12px;
+      padding:10px 12px;
+      border-radius:10px;
+      border:1px solid #ddd;
+      text-decoration:none;
+      color:var(--text);
+      font-weight:600;
+    }
+    .download:hover{ border-color:#bbb; }
+    @media (max-width: 900px){
+      .page{ grid-template-columns: 1fr; }
+      .rail{ padding:18px 16px; }
+      main{ padding:22px 18px; }
+      .cols{ grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+  <!-- LEFT RAIL -->
+  <aside class="rail">
+    <div class="avatar">
+      Add headshot<br/>or initials
+    </div>
+
+    <div class="iconRow">
+      <!-- Replace href targets with your real links -->
+      <a class="iconLink" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+      <a class="iconLink" href="tel:+14129744781" aria-label="Phone">☎</a>
+      <a class="iconLink" href="mailto:mac1028@mac.com" aria-label="Email">✉</a>
+      <a class="iconLink" href="https://maps.google.com/" target="_blank" rel="noreferrer" aria-label="Location">⌖</a>
+    </div>
+
+    <div class="divider"></div>
+    <small>
+      Pittsburgh, PA<br/>
+      (Optional tagline / specialties)
+    </small>
+  </aside>
+
+  <!-- MAIN -->
+  <main>
+    <header>
+      <h1>Melissa Christian-Smorul</h1>
+      <p class="title">Senior Director, Outsourcing</p>
+      <!-- Optional: keep the PDF available -->
+      <a class="download" href="MC-Resume.pdf" download>Download PDF</a>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">
+        Dynamic executive with 20+ years of progressive leadership, combining strategic vision,
+        operational excellence, and client-centered expertise. A trusted partner to senior leadership
+        and proven change agent—known for translating complex strategies into compelling narratives
+        that drive organizational alignment, business growth, and AI adoption.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="role">WTW</div>
+      <div class="meta">2005 – Current</div>
+      <ul>
+        <li>20+ years of progressive leadership across business analysis, project management, client delivery, customer experience, product marketing, and executive strategy.</li>
+        <li>Strategic partner to Head of Outsourcing NA; drives business planning, performance oversight, and execution of priorities.</li>
+        <li>Leads AI communications, branding, and change strategy for Outsourcing—architecting narrative and driving adoption at scale.</li>
+      </ul>
+    </section>
+
+    <section class="cols">
+      <div>
+        <h2>Education</h2>
+        <div class="role">Bachelor of Arts</div>
+        <div class="meta">Organizational Communication — Edinboro University</div>
+
+        <div class="role" style="margin-top:10px;">Master of Science</div>
+        <div class="meta">Organizational Leadership — Duquesne University</div>
+      </div>
+
+      <div>
+        <h2>Skills</h2>
+        <div class="pillList">
+          <span class="pill">Strategy & Leadership</span>
+          <span class="pill">Communications & Brand</span>
+          <span class="pill">Client & Market Growth</span>
+          <span class="pill">Operations & Delivery</span>
+          <span class="pill">Technology & Innovation</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>
