@@ -6,8 +6,8 @@
   <title>Melissa Christian-Smorul | Resume</title>
   <style>
     :root{
-      --purple:#5b2aa6;     /* sidebar purple (adjust to match your PDF) */
-      --purple-dark:#48086f;/* accent purple */
+      --purple:#5b2aa6;
+      --purple-dark:#48086f;
       --text:#111;
       --muted:#555;
       --rule:#1a1a1a;
@@ -22,44 +22,32 @@
     }
     .page{
       display:grid;
-      grid-template-columns: 260px 1fr;
+      grid-template-columns: 270px 1fr;
       min-height:100vh;
     }
+
     /* LEFT RAIL */
     .rail{
       background:var(--purple);
       padding:28px 20px;
-      position:relative;
     }
-    .avatar{
-      width:110px;
-      height:110px;
-      border-radius:10px;
-      background:rgba(255,255,255,.18);
+    .headshot{
+      width:100%;
+      border-radius:12px;
       border:2px solid rgba(255,255,255,.35);
-      margin-bottom:18px;
-      overflow:hidden;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:white;
-      font-size:12px;
-      text-align:center;
-      padding:10px;
-    }
-    .rail .divider{
-      height:2px;
-      background:rgba(255,255,255,.35);
-      margin:18px 0;
+      display:block;
+      margin-bottom:16px;
+      background:rgba(255,255,255,.12);
     }
     .iconRow{
       display:flex;
       gap:10px;
       flex-wrap:wrap;
+      margin-top:10px;
     }
     .iconLink{
-      width:38px;
-      height:38px;
+      width:40px;
+      height:40px;
       border-radius:10px;
       background:rgba(255,255,255,.18);
       border:1px solid rgba(255,255,255,.35);
@@ -68,19 +56,25 @@
       justify-content:center;
       text-decoration:none;
       color:white;
-      font-weight:700;
+      font-weight:800;
       letter-spacing:.02em;
     }
     .rail small{
-      color:rgba(255,255,255,.9);
+      color:rgba(255,255,255,.92);
       display:block;
-      margin-top:10px;
-      line-height:1.25;
+      margin-top:14px;
+      line-height:1.35;
+      font-weight:600;
+    }
+    .divider{
+      height:2px;
+      background:rgba(255,255,255,.35);
+      margin:18px 0 10px;
     }
 
-    /* MAIN CONTENT */
+    /* MAIN */
     main{
-      padding:34px 38px;
+      padding:34px 40px;
       max-width: 980px;
     }
     header{
@@ -97,11 +91,19 @@
       margin:0;
       font-size:18px;
       color:var(--muted);
-      font-weight:600;
+      font-weight:700;
     }
-    section{
-      margin:18px 0 0;
+    .download{
+      display:inline-block;
+      margin-top:12px;
+      padding:10px 12px;
+      border-radius:10px;
+      border:1px solid #ddd;
+      text-decoration:none;
+      color:var(--text);
+      font-weight:650;
     }
+    section{ margin:18px 0 0; }
     h2{
       margin:0 0 8px;
       font-size:14px;
@@ -109,28 +111,27 @@
       color:var(--purple-dark);
       text-transform:uppercase;
     }
-    .summary{
-      margin:0;
-      line-height:1.45;
-    }
+    p{ margin:0; line-height:1.5; }
     .role{
       margin-top:10px;
-      font-weight:700;
+      font-weight:800;
+      font-size:16px;
     }
     .meta{
       color:var(--muted);
-      font-weight:600;
+      font-weight:650;
       margin:2px 0 8px;
     }
     ul{
       margin:8px 0 0 18px;
       padding:0;
     }
-    li{ margin:6px 0; line-height:1.35; }
+    li{ margin:7px 0; line-height:1.4; }
     .cols{
       display:grid;
       grid-template-columns: 1fr 1fr;
       gap:14px 26px;
+      margin-top:18px;
     }
     .pillList{
       display:flex;
@@ -145,17 +146,7 @@
       font-size:13px;
       background:#fafafa;
     }
-    .download{
-      display:inline-block;
-      margin-top:12px;
-      padding:10px 12px;
-      border-radius:10px;
-      border:1px solid #ddd;
-      text-decoration:none;
-      color:var(--text);
-      font-weight:600;
-    }
-    .download:hover{ border-color:#bbb; }
+
     @media (max-width: 900px){
       .page{ grid-template-columns: 1fr; }
       .rail{ padding:18px 16px; }
@@ -167,43 +158,34 @@
 <body>
 
 <div class="page">
-  <!-- LEFT RAIL -->
   <aside class="rail">
-    <div class="avatar">
-      Add headshot<br/>or initials
-    </div>
+    <!-- Upload your photo to: /assets/headshot.jpg -->
+    <img class="headshot" src="assets/headshot.jpg" alt="Headshot">
 
     <div class="iconRow">
-      <!-- Replace href targets with your real links -->
-      <a class="iconLink" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
-      <a class="iconLink" href="tel:+14129744781" aria-label="Phone">☎</a>
-      <a class="iconLink" href="mailto:mac1028@mac.com" aria-label="Email">✉</a>
-      <a class="iconLink" href="https://maps.google.com/" target="_blank" rel="noreferrer" aria-label="Location">⌖</a>
+      <!-- Update links as desired -->
+      <a class="iconLink" href="http://www.linkedin.com/in/melissa-christian-smorul-24508659" target="_blank" rel="noreferrer">in</a>
+      <a class="iconLink" href="tel:+14129744781">☎</a>
+      <a class="iconLink" href="mailto:mac1028@mac.com">✉</a>
+      <a class="iconLink" href="https://maps.app.goo.gl/A9xbLKmcGB8MNwgg6" target="_blank" rel="noreferrer">⌖</a>
     </div>
 
     <div class="divider"></div>
     <small>
       Pittsburgh, PA<br/>
-      (Optional tagline / specialties)
+      Senior Director, Outsourcing
     </small>
   </aside>
 
-  <!-- MAIN -->
   <main>
     <header>
       <h1>Melissa Christian-Smorul</h1>
       <p class="title">Senior Director, Outsourcing</p>
-      <!-- Optional: keep the PDF available -->
-      <a class="download" href="MC-Resume.pdf" download>Download PDF</a>
-    </header>
 
-    <section>
-      <h2>Summary</h2>
-      <p class="summary">
-        Dynamic executive with 20+ years of progressive leadership, combining strategic vision,
-        operational excellence, and client-centered expertise. A trusted partner to senior leadership
-        and proven change agent—known for translating complex strategies into compelling narratives
-        that drive organizational alignment, business growth, and AI adoption.
+      <!-- Optional: Upload your PDF to the repo root and link it here -->
+      <!-- <a class="download" href="MC%20Resume.pdftner to senior leadership and proven change agent — known for translating complex strategies into compelling narratives that drive
+        organizational alignment, business growth, and AI adoption. Collaborative leader with a consistent track record of building high-performing teams,
+        deepening strategic partnerships, and delivering measurable outcomes.
       </p>
     </section>
 
@@ -212,34 +194,45 @@
 
       <div class="role">WTW</div>
       <div class="meta">2005 – Current</div>
+
       <ul>
-        <li>20+ years of progressive leadership across business analysis, project management, client delivery, customer experience, product marketing, and executive strategy.</li>
-        <li>Strategic partner to Head of Outsourcing NA; drives business planning, performance oversight, and execution of priorities.</li>
-        <li>Leads AI communications, branding, and change strategy for Outsourcing—architecting narrative and driving adoption at scale.</li>
+        <li>20+ years of progressive leadership across <strong>business analysis</strong>, <strong>project management</strong>, <strong>client delivery</strong>, <strong>customer experience</strong>, <strong>product marketing</strong>, and <strong>executive strategy</strong> — with a track record of driving impact at every level of the organization.</li>
+        <li>Serves as the strategic partner to the Head of Outsourcing NA and member of the Benefits Delivery &amp; Outsourcing Leadership Committee, driving business planning, performance oversight, and execution of key organizational and operational priorities across the business.</li>
+        <li>Acts as the primary relationship owner for the sourcing advisor community, cultivating and expanding strategic partnerships that deepen engagement with WTW's comprehensive Health, Wealth, and Career offerings.</li>
+        <li>Leads AI communications, branding, and change strategy for the Outsourcing business — architecting the narrative around the market facing AI suite and building colleague confidence — driving cultural adoption at scale.</li>
+        <li>Orchestrates cross-functional alignment across product, sales, marketing, finance, and client delivery teams — ensuring the right people, data, and strategies are in place to support informed decision-making and sustainable business growth.</li>
+        <li>Owns communication strategies for Outsourcing NA, including high-profile internal communications, executive strategic narrative development, vision articulation, and social media content.</li>
+        <li>Champions the end-to-end client experience and client messaging architecture for Outsourcing clients through multichannel education and engagement strategies — spanning marketing materials, webcasts, Client Forum events, demo support, and the Client Connect website.</li>
+        <li>Leads high-performing teams, consistently building cultures of accountability, collaboration, and continuous improvement across the business.</li>
+        <li>Elevates organizational capabilities by driving consistency in methods, processes, documentation, and deliverables.</li>
+        <li>Translates complex business needs into comprehensive strategic plans and consulting strategies that deliver measurable outcomes on time and within budget.</li>
+        <li>Expands the scope and impact of the business by focusing on the expansion of outsourcing service delivery, trusted advisory relationships, and proactive client growth.</li>
       </ul>
     </section>
 
     <section class="cols">
       <div>
         <h2>Education</h2>
-        <div class="role">Bachelor of Arts</div>
-        <div class="meta">Organizational Communication — Edinboro University</div>
 
-        <div class="role" style="margin-top:10px;">Master of Science</div>
-        <div class="meta">Organizational Leadership — Duquesne University</div>
+        <div class="role">Bachelor of Arts</div>
+        <div class="meta">Organizational Communication — Edinboro University, Edinboro PA</div>
+
+        <div class="role">Master of Science</div>
+        <div class="meta">Organizational Leadership — Duquesne University, Pittsburgh PA</div>
       </div>
 
       <div>
         <h2>Skills</h2>
         <div class="pillList">
-          <span class="pill">Strategy & Leadership</span>
-          <span class="pill">Communications & Brand</span>
-          <span class="pill">Client & Market Growth</span>
-          <span class="pill">Operations & Delivery</span>
-          <span class="pill">Technology & Innovation</span>
+          <span class="pill">Strategy &amp; Leadership</span>
+          <span class="pill">Communications &amp; Brand</span>
+          <span class="pill">Client &amp; Market Growth</span>
+          <span class="pill">Operations &amp; Delivery</span>
+          <span class="pill">Technology &amp; Innovation</span>
         </div>
       </div>
     </section>
+
   </main>
 </div>
 
